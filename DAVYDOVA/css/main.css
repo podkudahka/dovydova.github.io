@@ -1,0 +1,400 @@
+section,
+span,
+li,
+ul,
+div,
+hr,
+button,
+a,
+p,
+img,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+  font-weight: 400;
+}
+.title {
+  color: #040404;
+  font-size: 39px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+hr {
+  width: 420px;
+  height: 2px;
+  background-color: #000000;
+  margin: 2px auto 0px auto;
+}
+hr:nth-of-type(1) {
+  margin-top: 18px;
+}
+.sidebar {
+  float: right;
+  margin-top: 155px;
+  margin-right: 58px;
+  z-index: 5;
+}
+.sidebar .sidebar__img {
+  cursor: pointer;
+  width: 74px;
+  height: 75px;
+  border: 3px solid #afd2d3;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.sidebar .sidebar__img:nth-of-type(1) {
+  margin: 0;
+  background: url(../img/sidebar/домик.png) #e3e6de center center no-repeat;
+}
+.sidebar .sidebar__img:nth-of-type(2) {
+  background: url(../img/sidebar/витрина.png) #e3e6de center center no-repeat;
+}
+.sidebar .sidebar__img:nth-of-type(3) {
+  background: url(../img/sidebar/о-нас.png) #e3e6de center center no-repeat;
+}
+.sidebar .sidebar__img:nth-of-type(4) {
+  background: url(../img/sidebar/портфолио.png) #e3e6de center center no-repeat;
+}
+.sidebar .sidebar__img:nth-of-type(5) {
+  background: url(../img/sidebar/преимущества.png) #e3e6de center center no-repeat;
+}
+.sidebar .sidebar__img:nth-of-type(6) {
+  background: url(../img/sidebar/порядок-работы.png) #e3e6de center center no-repeat;
+}
+.sidebar.fixed {
+  position: fixed;
+  right: 0px;
+}
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #040404;
+  margin: 0px auto;
+  max-width: 1920px;
+  height: 3840px;
+  background: url(../img/main-fon.png) center center no-repeat;
+}
+#first {
+  height: 942px;
+}
+.wrapper-main-menu {
+  padding-top: 221px;
+  position: relative;
+  display: table;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.main-menu {
+  margin: 0px auto;
+}
+.main-menu__item {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border: 3px solid #fefefe;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.main-menu__contacts {
+  left: -127px;
+  top: 187px;
+  background: url(../img/main-menu/contacts.png) center center no-repeat;
+}
+.main-menu__showcase {
+  left: 141px;
+  top: 33px;
+  background: url(../img/main-menu/vitrina.png) center center no-repeat;
+}
+.main-menu__about-us {
+  left: 408px;
+  top: 188px;
+  background: url(../img/main-menu/o-nas.png) center center no-repeat;
+}
+.main-menu__operating-procedure {
+  left: -127px;
+  top: 495px;
+  background: url(../img/main-menu/poryadok-raboti.png) center center no-repeat;
+}
+.main-menu__advantage {
+  left: 141px;
+  top: 649px;
+  background: url(../img/main-menu/preimushestva.png) center center no-repeat;
+}
+.main-menu__portfolio {
+  left: 408px;
+  top: 496px;
+  background: url(../img/main-menu/portfolio.png) center center no-repeat;
+}
+#second {
+  background: url(../img/showcase/showcase-fon.png) center center no-repeat;
+  height: 944px;
+}
+.showcase {
+  position: relative;
+  background: url(../img/showcase/all-fons.png) center center no-repeat;
+  width: 870px;
+  height: 871px;
+  padding-top: 37px;
+  top: 37px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.showcase-title {
+  text-align: center;
+  color: #040404;
+  font-size: 39px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.showcase__block {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.showcase__block img {
+  width: 260px;
+  height: 252px;
+  border: 3px solid #99cfd2;
+  margin-left: 100px;
+}
+.showcase__block:nth-of-type(1) {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.showcase__text {
+  margin-top: -4px;
+  margin-left: 22px;
+  max-width: 416px;
+}
+.showcase__text h3 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+.showcase__text p {
+  line-height: 18px;
+  letter-spacing: 0.14px;
+  margin-bottom: 17px;
+}
+.showcase__text a {
+  color: #050505;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 12.75px;
+  letter-spacing: 0.24px;
+  background-color: #99cfd2;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+.showcase__comment {
+  position: absolute;
+  width: 800px;
+  top: 268px;
+  left: 40px;
+  line-height: 18px;
+  letter-spacing: 0.14px;
+}
+.showcase__slider {
+  width: 650px;
+  position: relative;
+  top: 461px;
+  left: 111px;
+  overflow: hidden;
+}
+.showcase__slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+.showcase__slider__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+}
+.showcase__slider__item img {
+  border: 3px solid #98cfd3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.showcase__slider__control {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+.showcase__slider__control_show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.showcase__slider__control_left {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.showcase__slider__control_right {
+  right: 0;
+}
+#third {
+  height: 944px;
+}
+.about-us {
+  position: relative;
+  background: url(../img/о-нас/фон.png) center center no-repeat;
+  width: 892px;
+  height: 892px;
+  border: 3px solid #fcfafa;
+  border-radius: 50%;
+  padding-top: 37px;
+  top: 37px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.about-us-title {
+  text-align: center;
+  margin-top: 8px;
+  color: #040404;
+  font-size: 39px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+.about-us__navigation {
+  position: relative;
+  top: -38px;
+  left: -361px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.about-us__navigation-title {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+.about-us__slider {
+  position: relative;
+  top: 176px;
+  left: -89px;
+  width: 630px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.about-us__slider-item {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 0 auto;
+}
+.about-us__slider-item img {
+  margin: 0 auto;
+  border: 3px solid #98cfd3;
+  border-radius: 50%;
+}
+.about-us__slider-item p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.18px;
+  text-align: center;
+}
+.about-us__slider .about-us__navigation-prevArrow {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  top: -36px;
+  left: 446px;
+}
+.about-us__slider .about-us__navigation-nextArrow {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  top: -250px;
+  left: 185px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.about-us__text {
+  position: relative;
+  top: -222px;
+  left: 344px;
+}
+.about-us__text-quote {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 50.97px;
+  letter-spacing: 0.18px;
+}
+.about-us__text-quote p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+.about-us__text-main {
+  margin-top: 40px;
+  width: 445px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.14px;
+}

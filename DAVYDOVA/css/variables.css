@@ -1,0 +1,15 @@
+.title {
+  color: #040404;
+  font-size: 39px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+hr {
+  width: 420px;
+  height: 2px;
+  background-color: #000000;
+  margin: 2px auto 0px auto;
+}
+hr:nth-of-type(1) {
+  margin-top: 18px;
+}
